@@ -8,14 +8,17 @@
         <link rel="icon" type="image/check-icon" href="/images/favicon.ico">
     </head>
     <body>
-        <h3>Meeting Contents</h3>
-        <nav>
-            <ul>
-            <li><a href="#Meeting Title"> Meeting Title </a></li>
-            <li><a href="#Topics Discussed"> Topics Discusssed</a></li>
-            <li><a href="Media"> Media</a></li>
-            </ul>
-        </nav>
+        <details>
+            <summary><b>Meeting Contents</b></summary>
+            <nav>
+                <ul>
+                <li><a href="#Meeting Title"> Meeting Title </a></li>
+                <li><a href="#Topics Discussed"> Topics Discusssed</a></li>
+                <li><a href="Media"> Media</a></li>
+                </ul>
+            </nav>
+        </details>
+
         <hr>
         <br>
         <div id="Meeting Title">
@@ -71,7 +74,10 @@
                 <br>
                 <audio control>
                     <source src="sax.mp3" type="audio/mpeg">
-                </audio>
+                    Image not supported.</audio>
+                <br>
+                <video src="https://youtu.be/UwtTSqTbWzg" height="240" width="320" controls>
+                    Video not supported.</video>
         </div>
         <h3> Miscellaneous Comments/Questions:</h3>
             <ul>
@@ -80,6 +86,35 @@
             </ul>
         </main>
         <br>
+        <form>
+            First Name: <input type="text" name="first_name"/>
+            <br>
+            Last Name: <input type="text" name="last_name"/>
+            <br>
+            UCSD Student?<input type="checkbox" name="yes_student" value="on" />Yes
+                    <input type="checkbox" name="no_student" value="on"/>No
+            <br>
+            College <input type="radio" name="college" value="Muir"/> Muir
+            <input type="radio" name="college" value="Muir"/> ERC
+            <input type="radio" name="college" value="Muir"/> Sixth
+            <input type="radio" name="college" value="Muir"/> Marshall
+            <input type="radio" name="college" value="Muir"/> Warren
+            <input type="radio" name="college" value="Muir"/> Revelle
+            <br>
+            Graduation Year <select name="dropdown">
+                    <option value="2023" selected>2023</option>
+                    <option value="2024" selected>2024</option>
+                    <option value="2025" selected>2025</option>
+                    <option value="2026" selected>2026</option>
+                    <option value="2027" selected>2027</option>
+                    <option value="2028" selected>2028</option>
+            </select>
+            <br>
+            Additional Comments: <br/>
+            <textarea rows="3" cols="50" name="description">
+            Enter Text Here...
+            </textarea>
+        </form>
     </body>
 
     <hr> 
